@@ -6,7 +6,7 @@
 #include <sys/errno.h>
 #include <sys/stat.h>
 
-#include "b64/b64.h"
+#include "b64.c/b64.h"
 
 size_t get_filesize(const char *filename) {
   struct stat st;

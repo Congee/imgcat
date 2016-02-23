@@ -1,13 +1,13 @@
 CC=cc
-CFLAGS= -Ib64
+CFLAGS= -Ib64.c
 CXXFLAGS=
 LD=
 LDFLAGS=
 
 target = imgcat
 
-all: imgcat.c b64/encode.c
-	$(CC) $(CFLAGS) imgcat.c b64/encode.c -o $(target)
+all: imgcat.c b64.c/encode.c
+	$(CC) $(CFLAGS) imgcat.c b64.c/encode.c -o $(target)
 
 .PHONY: clean
 
